@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+D:\c-dac pgdbda\java\day 17 21 nov 2022\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
+1091368847.index
+3011209426.index

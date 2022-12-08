@@ -1,0 +1,14 @@
+package com.multithreadingDemo.main;
+
+import com.multithreadingDemo.threads.runnable;
+
+public class AppMain4 {
+
+	public static void main(String[] args) {
+		runnable r1 = new runnable();
+		r1.Start();
+		
+
+	}
+
+}

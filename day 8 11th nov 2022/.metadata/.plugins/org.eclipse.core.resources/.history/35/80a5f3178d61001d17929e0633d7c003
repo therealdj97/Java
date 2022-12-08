@@ -1,0 +1,10 @@
+package com.InterfacesDemo.entity;
+
+public abstract class TerestialAnimals {
+//	public abstract void move_on_land(){
+//		
+//	}
+public interface TerestialAnimals{
+	void move_on_land();
+}
+}

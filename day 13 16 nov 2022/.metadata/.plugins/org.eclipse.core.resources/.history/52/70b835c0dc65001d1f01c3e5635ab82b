@@ -1,0 +1,36 @@
+package com.assignment11.entity;
+import java.io.File;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class Append {
+	private File f1 = new File(
+			"D:\\test.txt");
+			
+			public void writeData() {
+				try(FileWriter writer = new FileWriter(f1)) {
+					writer.write("C-Dac PG-DBDA TVM.");
+					System.out.println("data saved into the file");
+				} catch (IOException e) {
+					e.printStackTrace();
+				}
+			}
+			
+			public void readData() {
+				try (FileReader reader = new FileReader(f1)) {
+					
+					int x = 0;
+					String str = "";
+					
+					while((x = reader.read()) != -1) {
+						str = str + (char) x;
+					}
+					
+					System.out.println("data read from file : " + str);
+					
+				} catch (IOException e) {
+					e.printStackTrace();
+				}
+			}
+}

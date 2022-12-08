@@ -1,0 +1,16 @@
+package com.oopDemo.entity;
+
+public class shoe {
+	private String type;
+	private int size;
+	private String brand;
+	
+	public void manufactureShoe(String type,int size,String brand) {
+		this.type = type;
+		this.size = size;
+		this.brand = brand;
+	}
+	public void showShoeDetails() {
+		System.out.println("type "+type+" size "+size+" brand "+brand);
+	}
+}

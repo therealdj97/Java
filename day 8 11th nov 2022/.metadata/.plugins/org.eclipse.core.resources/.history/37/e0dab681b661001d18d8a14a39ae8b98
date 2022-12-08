@@ -1,0 +1,10 @@
+package com.Assignmet7.Entity;
+
+public class Square {
+	private double area;
+	
+	public double area(double a) {
+		area = (a*a);
+		return area;
+	}
+}

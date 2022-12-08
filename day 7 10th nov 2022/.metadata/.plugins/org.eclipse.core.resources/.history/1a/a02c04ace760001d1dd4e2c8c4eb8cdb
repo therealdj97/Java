@@ -1,0 +1,7 @@
+package com.Assignment6.Entity;
+
+public class manager extends employee{
+	public void Manager(){
+		String department;
+	}
+}

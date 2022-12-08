@@ -1,0 +1,155 @@
+package com.jdbc.daoimpl;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+
+import com.jdbc.connection.DbConnection;
+import com.jdbc.dao.ordersDao;
+import com.jdbc.pojo.orders;
+
+
+public class OrdersDaoImpl implements ordersDao {
+
+	@Override
+	public List<orders> getAllOrders() {
+		List <orders>lst = new ArrayList<>();
+		// try with resources so that we wont have to close connection separately
+		try (Connection con = DbConnection.getDatabaseConnection()){
+			//helps improvising performance of program also reduces chances of sql injection 
+			
+			PreparedStatement pst = con.prepareStatement("SELECT * FROM orders");
+			
+			ResultSet rs = pst.executeQuery();	
+			
+			if(rs.isBeforeFirst()) {
+				while(rs.next()) {
+					orders order =new orders();
+					order.setOrderId(rs.getString("OrderId"));
+					order.setCustomer_id(rs.getString("customer_id"));
+					order.setUnit_price(rs.getInt("unit_price"));
+					order.setEmployee_id(rs.getString("Employee_id"));
+					order.setAsset_id(rs.getInt("asset_id"));
+					lst.add(order);
+				}
+			}
+				return lst;
+		} catch(SQLException e) {
+			System.out.println("error in getting orders");
+			e.printStackTrace();
+			lst.clear(); //this means all the objects added in list will be removed
+			return lst;
+		}
+//		return null;
+	}
+
+	@Override
+	public orders searchOrderById(String id) {
+		orders order = null;
+		// try with resources so that we wont have to close connection separately
+		try (Connection con = DbConnection.getDatabaseConnection()){
+			//helps improvising performance of program also reduces chances of sql injection 
+			PreparedStatement pst = con.prepareStatement("SELECT * FROM orders WHERE orderId= ?");
+				pst.setString(1,id); // 1 is number of question mark and id is whose value to be specifies; 
+			ResultSet rs = pst.executeQuery();	
+			if(rs.isBeforeFirst()) {
+				rs.next();
+					order = new orders();
+					order.setOrderId(rs.getString("OrderId"));
+					order.setCustomer_id(rs.getString("customer_id"));
+					order.setUnit_price(rs.getInt("unit_price"));
+					order.setEmployee_id(rs.getString("Employee_id"));
+					order.setAsset_id(rs.getInt("asset_id"));
+				}
+			return order;
+		}
+		catch(SQLException e) {
+			e.printStackTrace();
+			return null;
+		}
+	}
+
+	@Override
+	public boolean addNewOrder(orders order) {
+		
+		try (Connection con = DbConnection.getDatabaseConnection()){
+			
+			//helps improvising performance of program also reduces chances of sql injection 
+			PreparedStatement pst = con.prepareStatement("INSERT INTO orders(OrderId,customer_id,unit_price,Employee_id,asset_id) VALUES(?,?,?,?,?)");
+			
+			pst.setString(1,order.getOrderId()); // 1 is number of question mark and id is whose value to be specifies; 
+			pst.setString(2,order.getCustomer_id());
+			pst.setInt(3,order.getUnit_price());	
+			pst.setString(4,order.getEmployee_id());
+			pst.setInt(5,order.getAsset_id());
+			
+			int count = pst.executeUpdate();	// if we want to call insert update delete query we use executeUpdate query. execute update return count of records which got changed because of our query  
+			
+			if(count>0) {
+				return true;
+			}
+			else 
+				return false;
+		}
+		catch(SQLException e) {
+			e.printStackTrace();
+			return false;
+		}
+	}
+
+	@Override
+	public boolean updateOrder(orders order) {
+		try (Connection con = DbConnection.getDatabaseConnection()){
+			//helps improvising performance of program also reduces chances of sql injection 
+			PreparedStatement pst = con.prepareStatement("UPDATE orders SET Customer_id=?,Unit_price=?,Employee_id=?,Asset_id=? WHERE OrderId = ?");
+			
+			 // 1 is number of question mark and id is whose value to be specifies; 
+			pst.setString(1,order.getCustomer_id());
+			pst.setInt(2,order.getUnit_price());	
+			pst.setString(3,order.getEmployee_id());
+			pst.setInt(4,order.getAsset_id());
+			pst.setString(5,order.getOrderId());
+			
+			int count = pst.executeUpdate();	// if we want to call insert update delete query we use executeUpdate query. execute update return count of records which got changed because of our query  
+			
+			if(count>0) {
+				return true;
+			}
+			else 
+				return false;
+		}
+		catch(SQLException e) {
+			e.printStackTrace();
+			return false;
+		}
+	}
+
+	@Override
+	public boolean deleteOrder(String OrderId) {
+		try (Connection con = DbConnection.getDatabaseConnection()){
+			//helps improvising performance of program also reduces chances of sql injection 
+			PreparedStatement pst = con.prepareStatement("DELETE FROM orders WHERE OrderId = ?");
+			
+			 // 1 is number of question mark and id is whose value to be specifies; 
+			pst.setString(1,OrderId);
+			//pst.setString(1,order.getOrderId());
+			
+			int count = pst.executeUpdate();	// if we want to call insert update delete query we use executeUpdate query. execute update return count of records which got changed because of our query  
+			
+			if(count>0) {
+				return true;
+			}
+			else 
+				return false;
+		}
+		catch(SQLException e) {
+			e.printStackTrace();
+			return false;
+		}
+		
+	}
+	
+}

@@ -1,0 +1,11 @@
+package com.assignment11.main;
+
+public class Que5 {
+
+	public static void main(String[] args) {
+		int pnum=25;
+		int temp=1;
+		for(int i=0;i<=pnum;i++) {
+		}
+	}
+}

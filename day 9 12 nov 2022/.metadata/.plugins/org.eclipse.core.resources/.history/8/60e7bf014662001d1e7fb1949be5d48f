@@ -1,0 +1,6 @@
+package com.interfaces.interfaces;
+
+public class PQR implements ABC{
+	@Override 
+
+}

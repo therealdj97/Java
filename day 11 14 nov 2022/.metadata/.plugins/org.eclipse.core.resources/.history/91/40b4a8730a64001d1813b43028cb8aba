@@ -1,0 +1,23 @@
+package com.Assignment9.main;
+
+import java.util.Scanner;
+
+public class AppMain5 {
+
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter string");
+		String s1=sc.nextLine();
+//		a|e|i|o|u
+		
+		String s2="";
+		String s3 = "aeiou";
+		for (int i;i<s1.length();i++) {
+			for (int j;j<s3.length();j++ ) {
+				if(s1.charAt(i)==s3.charAt(j)) {
+					s2=s2+s1.charAt(i);
+				}
+			}
+		} 
+	}
+}

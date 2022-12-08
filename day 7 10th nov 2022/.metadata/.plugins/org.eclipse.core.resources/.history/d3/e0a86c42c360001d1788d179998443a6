@@ -1,0 +1,12 @@
+package com.AssociationDemo.entity;
+
+public class car {
+	private String brand;
+	private String model;
+	private String engine;
+	public car(String brand,String model,String engine) {
+		this.brand=brand;
+		this.model=model;
+		this.engine=engine;
+	}
+}

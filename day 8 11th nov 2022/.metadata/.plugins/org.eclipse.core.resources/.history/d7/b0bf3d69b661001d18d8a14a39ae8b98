@@ -1,0 +1,10 @@
+package com.Assignmet7.Entity;
+
+public class Cube extends Square {
+
+
+
+public double cube(){
+	return cube;
+}
+}

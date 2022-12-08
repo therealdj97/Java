@@ -1,0 +1,13 @@
+package com.Assignment9.main;
+
+public class AppMain6 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String str = new String("You are not happy because you are well. You are well because you are happy. You are  not depressed because trouble has come, but trouble has come because you are  depressed");
+		System.out.println();
+		String a=str.replaceAll("You", "They" );
+		String b=a.replaceAll("you", "they");
+		System.out.println(b);
+	}
+}

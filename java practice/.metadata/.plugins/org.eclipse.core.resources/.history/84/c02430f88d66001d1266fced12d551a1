@@ -1,0 +1,5 @@
+package com.privateDataMembers.entity;
+
+public class NonParamerizedConstructor {
+
+}

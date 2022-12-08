@@ -1,0 +1,10 @@
+package com.multithreadingDemo.threads;
+
+public class runnable implements Runnable{
+
+	public void  run(){
+		@Override
+
+	}
+
+}

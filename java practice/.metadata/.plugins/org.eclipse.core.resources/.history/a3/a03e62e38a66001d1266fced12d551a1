@@ -1,0 +1,12 @@
+package com.privateDataMembers.entity;
+
+public class DataMembers {
+	private String name = "Dhiraj";
+	private int RollNo = 14 ;
+	
+	public void details() {
+		name;
+		RollNo;
+		
+	}
+}

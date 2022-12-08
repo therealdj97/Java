@@ -1,0 +1,9 @@
+package com.Assignment8.interfaces;
+
+public interface a {
+	default void msg() {
+		System.out.println("Hello from a");
+		
+	}
+
+}

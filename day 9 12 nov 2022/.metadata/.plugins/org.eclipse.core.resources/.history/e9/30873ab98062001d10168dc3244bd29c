@@ -1,0 +1,13 @@
+package com.Assignments8.main;
+
+import com.Assignment8.implemet.i3;
+import com.Assignment8.interfaces.i4;
+
+public class AppMainQ3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		i3 i = new i4();
+		i.meth1();
+	}
+}

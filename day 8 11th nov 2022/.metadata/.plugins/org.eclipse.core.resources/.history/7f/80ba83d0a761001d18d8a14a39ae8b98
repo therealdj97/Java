@@ -1,0 +1,10 @@
+package com.Assignmet7.Entity;
+
+public class PrevilegedAccount extends Account   {
+
+	public PrevilegedAccount(int accNo, String Name, String accType, Double accBalance) {
+		super(accNo, Name, accType, accBalance);
+		// TODO Auto-generated constructor stub
+	}
+
+}

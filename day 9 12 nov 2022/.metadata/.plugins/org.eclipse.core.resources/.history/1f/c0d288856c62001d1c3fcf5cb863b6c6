@@ -1,0 +1,16 @@
+package com.Assignments8.main;
+
+import com.Assignment8.interfaces.Average;
+import com.Assignment8.interfaces.Sum;
+
+public class AppMainQ2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Sum  s1 = new Sum();
+		Average avg1 = new Average();
+		s1.process(5, 10);
+		avg1.process(2, 3);
+	}
+
+}

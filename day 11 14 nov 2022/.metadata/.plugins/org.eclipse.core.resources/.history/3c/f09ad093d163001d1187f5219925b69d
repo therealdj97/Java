@@ -1,0 +1,16 @@
+package com.objectdemo.main;
+
+import com.objectdemo.pojo.Student;
+
+public class AppMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Student s1 = new Student(14,"dhiraj");
+		System.out.println(s1);
+//		Here java.lang .object class tostring() method  is being called
+		System.out.println(s1.toString());
+		
+	}
+
+}

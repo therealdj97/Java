@@ -1,0 +1,22 @@
+package com.oopDemo.main;
+import com.oopDemo.entity.Engine;
+
+public class AppMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Engine e1 = new Engine();
+		e1.manufactureEngine();
+		e1.showEngineDetails();
+		
+		Engine e2 = new Engine();
+		e2.manufactureEngine();
+		e2.showEngineDetails();
+		
+		Engine e3 = new Engine();
+		e3.manufactureEngine(1500,"diesel");
+		e3.showEngineDetails();
+	}
+
+}

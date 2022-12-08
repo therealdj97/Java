@@ -1,0 +1,29 @@
+package com.Assignmet7.Entity;
+
+public class Exam implements Result , Classify{
+@Override
+public void chkGrade(int average) {
+	if(average>60) {
+		System.out.println("First class");
+	}
+	else if(average>=50 && average<=60) {
+		System.out.println("Second class");
+	}
+	else if(average>=50 && average<=60) {
+		System.out.println("Third class");
+	}
+}
+
+@Override
+public boolean checkStatus(int mark) {
+	if(mark>=50) {
+		return true;
+	}
+	else 
+		return false;
+	
+}
+
+
+	
+}

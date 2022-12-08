@@ -1,0 +1,9 @@
+package com.Assignmet7.Entity;
+
+public class Bus extends Vehicle{
+@Override
+	public void name() {
+	System.out.println("bus is of red color");
+	}
+
+}

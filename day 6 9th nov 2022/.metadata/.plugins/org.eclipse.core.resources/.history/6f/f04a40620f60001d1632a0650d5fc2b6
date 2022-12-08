@@ -1,0 +1,31 @@
+package com.assignment5.entity;
+import java.util.Scanner;
+public class employee {
+	int empCode;
+	String name;
+	int basicPay;
+	float DA;
+	float HRA;
+	float grossPay;
+	
+	public  void employeeDetails() {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter EMployee code");
+		empCode = sc.nextInt();
+		name = sc.nextLine();
+		basicPay =sc.nextInt();
+	}
+	public void grossPay() {
+		if(basicPay<3500) {
+			DA = (45/100*basicPay);
+			HRA = (20/100*basicPay);
+		}
+		else if(basicPay>=3500) {
+			DA = (50/100*basicPay);
+			HRA = 1000;
+		}
+	}
+	public void display() {
+		System.out.println();
+	}
+}

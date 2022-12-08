@@ -1,0 +1,7 @@
+package com.functionallDemo.interfaces;
+
+@FunctionalInterface
+public class MathOp {
+	int calculate(int x,int y)
+;
+	}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="com.inheritDemo.entity.Manager"/>
+    <fullyQualifiedTypeName name="javax.sql.rowset.serial.SQLOutputImpl"/>
+    <fullyQualifiedTypeName name="com.inheritDemo.entity.abc"/>
+    <fullyQualifiedTypeName name="com.inheritDemo.entity.pqr"/>
+    <fullyQualifiedTypeName name="com.inheritDemo.entity.pqr1"/>
+    <fullyQualifiedTypeName name="com.AssociationDemo.entity.Engine"/>
+    <fullyQualifiedTypeName name="com.AssociationDemo.entity.car"/>
+    <fullyQualifiedTypeName name="com.Assignment6.Entity.add"/>
+    <fullyQualifiedTypeName name="java.sql.SQLOutput"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.lang.StringIndexOutOfBoundsException"/>
+    <fullyQualifiedTypeName name="com.Assignment6.Entity.student"/>
+    <fullyQualifiedTypeName name="com.Assignment6.Entity.projectStudent"/>
+    <fullyQualifiedTypeName name="com.Assignment6.Entity.calc"/>
+    <fullyQualifiedTypeName name="com.Assignment6.Entity.employee"/>
+    <fullyQualifiedTypeName name="com.Assignment6.Entity.manager"/>
+    <fullyQualifiedTypeName name="com.Assignment6.Entity.A"/>
+    <fullyQualifiedTypeName name="com.Assignment6.Entity.B"/>
+    <fullyQualifiedTypeName name="com.Assignment6.Entity.C"/>
+</qualifiedTypeNameHistroy>

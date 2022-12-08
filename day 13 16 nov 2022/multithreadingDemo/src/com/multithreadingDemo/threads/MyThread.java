@@ -1,0 +1,20 @@
+package com.multithreadingDemo.threads;
+
+
+public class MyThread extends Thread{
+	@Override
+	public void run() {
+		
+		try {
+			for(int i=1;i<10;i++) {
+				System.out.println("my custom thread "+i);		
+				Thread.sleep(2500);
+			}
+			System.out.println("my custom thread ended here");
+			
+		}
+		catch(InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
+}

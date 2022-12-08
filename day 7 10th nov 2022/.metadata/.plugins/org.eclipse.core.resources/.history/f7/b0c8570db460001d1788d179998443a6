@@ -1,0 +1,12 @@
+package com.Appmain.java;
+
+import com.inheritDemo.entity.abc;
+
+public class AppMain2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		pqr obj = new pqr();
+	}
+
+}

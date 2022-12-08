@@ -1,0 +1,27 @@
+//Create a Java program to overload an add function that can 
+//add integer, float or
+//double values and display the sum.
+package com.Assignment6.main;
+
+import com.Assignment6.Entity.add;
+import java.util.Scanner;
+public class q1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		add s1 = new add();
+		
+		s1.sum(0, 0);
+		s1.sum(0, 0);
+		
+		Scanner sc = new Scanner (System.in);
+		System.out.println("Enter 1st number");
+		int a =sc.nextInt();
+		System.out.println("Enter 2nd number");
+		int b = sc.nextInt();
+		int c=s1.sum(a, b);
+		System.out.println("addition is "+c);
+		
+	}
+
+}

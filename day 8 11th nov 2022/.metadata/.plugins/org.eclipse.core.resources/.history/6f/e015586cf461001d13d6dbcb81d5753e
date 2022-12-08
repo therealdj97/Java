@@ -1,0 +1,6 @@
+package com.Assignment7.main;
+
+public class AppMain5 {
+	Exam c1 = new Exam();
+	Exam c2 = new Exam();
+}

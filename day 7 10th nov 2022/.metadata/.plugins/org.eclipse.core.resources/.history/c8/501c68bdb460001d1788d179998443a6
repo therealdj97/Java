@@ -1,0 +1,8 @@
+package com.inheritDemo.entity;
+
+public class pqr1 extends abc1{
+	public pqr1() {
+		System.out.println("prq says hi");
+	}
+
+}

@@ -1,0 +1,25 @@
+package com.multithreadingDemo.main;
+
+import com.multithreadingDemo.threads.MyThread;
+
+public class myCustomThread {
+
+	public static void main(String[] args) {
+		MyThread t1 = new MyThread(); // new state
+		
+		t1.start();// runable state from line 11 there will be 2 threads running here 
+		
+		try {
+			for(int i=10;i<-100;i+=10) {
+				System.out.println("from main thread "+i);
+			}
+		}
+		catch() {
+			
+		}
+		
+		
+
+	}
+
+}

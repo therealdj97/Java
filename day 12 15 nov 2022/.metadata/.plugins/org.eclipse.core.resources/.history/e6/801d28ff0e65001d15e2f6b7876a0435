@@ -1,0 +1,41 @@
+package com.assignment10.main;
+
+import java.util.Scanner;
+
+import com.assignment10.Entity.InvalidBinaryException;
+
+public class q5 {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter binary number");
+		int bin = sc.nextInt();
+		int deci = 0;
+		int i = 0;
+		int temp = bin;
+		
+		try {
+			while(true) {
+				if(temp%10==1 || temp%10==0) {
+					if(temp==0) {
+						break;
+					}
+					else {
+						int temp1 = temp%10;
+						deci+=temp1*Math.pow(2, i);
+						i++;
+						temp/=10;
+					}
+				}
+				else {
+					throw new InvalidBinaryException("The number isn't binary number");
+				}
+			}
+			System.out.println("the binary conversion of "+bin+" is "+deci);
+		}
+		catch(InvalidBinaryException exc) {
+			System.out.println(exc.getMessage());
+		}
+	}
+}

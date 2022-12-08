@@ -1,0 +1,19 @@
+package com.multithreadingDemo.threads;
+
+public class runnable implements Runnable{
+	@Override
+	public void  run(){
+		try {
+			for(int i=0;i<=10;i++) {
+				System.out.println("runnable says "+i);
+				Thread.sleep(2000);
+			}
+		}
+		catch(InterrupedException e) {
+			
+		}
+
+
+	}
+
+}

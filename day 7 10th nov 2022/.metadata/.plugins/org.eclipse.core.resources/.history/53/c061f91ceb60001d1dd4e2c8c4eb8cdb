@@ -1,0 +1,11 @@
+//5. Create a class A with the method dispmsg() which prints some message. Create one sub
+//class of A with name B and override the dispmsg() function, also create one more
+//subclass from B with name C and override the dispmsg() function in C also. In main
+//invoke that function with the help of three class instances.
+package com.Assignment6.Entity;
+
+public class B extends A{
+	public void dispmsg(String msg) {
+		System.out.println("B says"+msg);
+	} 
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;om.objectdemo.pojo&apos; to &apos;com.objectdemo.pojo&apos;&#x0D;&#x0A;- Original project: &apos;ObjectDemo&apos;&#x0D;&#x0A;- Original element: &apos;ObjectDemo/src/om.objectdemo.pojo&apos;&#x0D;&#x0A;- Renamed element: &apos;ObjectDemo/src/com.objectdemo.pojo&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;om.objectdemo.pojo&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;om.objectdemo.pojo" name="com.objectdemo.pojo" qualified="false" references="true" stamp="1668397377487" textual="false" version="1.0"/>
+</session>

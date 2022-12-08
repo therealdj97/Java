@@ -1,0 +1,26 @@
+package com.multithreadingDemo.main;
+
+import com.multithreadingDemo.threads.runnable;
+
+public class AppMain4 {
+
+	public static void main(String[] args) {
+		Thread r1 = new Thread();
+		r1.start();
+		
+		try {
+			for(int i=0;i<=10;i++) {
+				System.out.println("runnable says "+i);
+				Thread.sleep(2000);
+			}
+			System.out.println("out of runnable");
+		}
+		catch(InterruptedException e) {
+			e.printStackTrace();
+		}
+		System.out.println("main ends");
+		
+
+	}
+
+}

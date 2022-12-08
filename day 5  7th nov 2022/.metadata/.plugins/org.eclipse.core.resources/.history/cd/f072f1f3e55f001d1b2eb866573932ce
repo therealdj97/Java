@@ -1,0 +1,13 @@
+package com.oopDemo.main;
+
+import com.oopDemo.entity.product;
+
+public class ProductMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		product p1  = new product();
+		p1.showProductDetails();
+	}
+
+}

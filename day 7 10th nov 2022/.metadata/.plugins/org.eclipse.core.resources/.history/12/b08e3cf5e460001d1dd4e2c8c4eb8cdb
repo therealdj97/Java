@@ -1,0 +1,20 @@
+//4. Create a class named Employee having the following data members:
+//name
+//age
+//phoneno
+//address
+//salary
+//It also has a method named printSalary which prints the salary of the members.
+//Another class Manager inherits the Employee class. The Manager class have data
+//member department. Now, assign name, age, phone number, address, salary and
+//department to a manager by making an object of Manager class and print the salary.
+
+package com.Assignment6.Entity;
+
+public class employee {
+	private String name;
+	//age
+	//phoneno
+	//address
+	//salary
+}

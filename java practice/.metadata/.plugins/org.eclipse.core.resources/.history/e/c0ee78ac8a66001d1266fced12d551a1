@@ -1,0 +1,6 @@
+package com.privateDataMembers.entity;
+
+public class DataMembers {
+	private String name ;
+	private int RollNo ;
+}

@@ -1,0 +1,15 @@
+package com.interfaces.implement;
+
+public class XYZ implements ABC{
+
+	@Override
+	public void show() {
+		System.out.println("show() of XYZ called");
+	}
+	
+	@Override
+	public void display() {
+		System.out.println("display() of XYZ called");
+	}
+
+}

@@ -1,0 +1,61 @@
+JDBC Database Driver :-
+	It is a s/w component that is used to facilitate communication between Java Application and DBMS.
+
+Types Of JDBC Drivers :- 
+
+1) Type-I	: JDBC-ODBC Driver Bridge. lack of performance		
+
+2) Type-II	: Partly written in java and partly in native code.
+
+3) Type-III	: Network protocol drivers. middleware server
+
+4) Type-IV	: Vendor Protocol drivers. fully written in java. developed by DBMS vendors themselves.
+	
+
+7 steps to be followed in a JDBC program :- 
+
+1) load the database Driver.
+
+2) get Connection with the database.
+
+3) create Statement to execute query. 
+
+4) execute the query. 
+
+5) store result of the query into ResultSet 
+
+6) process data from the ResultSet.
+
+7) close the database Connection. 
+
+	
+4 interfaces : 
+	1) java.sql.Driver
+	2) java.sql.Connection
+	3) java.sql.Statement
+	4) java.sql.ResultSet
+
+	implementing classes of above interfaces are provided by JDBC Drivers. 	
+
+
+Calling stored procedure in jdbc :- 
+
+			CallableStatement cs = con.prepareCall(
+					"{call stored_proc_name(?,?)}");
+			
+			cs.setInt(1,123);
+			
+			cs.registerOutParameter(2, Types.CHAR);
+			
+			cs.execute();
+			
+			String result = cs.getString(2);
+						
+
+
+
+
+
+
+
+

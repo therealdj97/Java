@@ -1,0 +1,25 @@
+package com.assignment10.Entity;
+
+import java.util.Scanner;
+
+public class MarkProcess {
+	public int regno ;
+	public int marks ;
+	
+	MarkProcess() {
+		Scanner sc = new Scanner (System.in);
+		this.marks=sc.nextInt();
+	}
+	public void validation() {
+		try{
+			System.out.println();
+			if (marks<0) {
+				System.out.println();
+			}
+		}
+		catch() {
+			
+		}
+	}
+
+}

@@ -1,0 +1,24 @@
+//2. Write a program to find the transpose of a given matrix.
+package com.assignment.main;
+import java.util.Scanner;
+public class question2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Enter length for both arrays");
+		Scanner sc = new Scanner (System.in);
+		int a = sc.nextInt(); 
+		int arr1[]=new int[a];
+		int arr2[]= new int[a];
+		System.out.println("Enter elements for 1st array");
+		for (int i=0;i<a;i++) {
+			arr1[i]=sc.nextInt();
+		}
+		System.out.println("Enter elements for 2nd array");
+		for (int i=0;i<a;i++) {
+			arr2[i]=sc.nextInt();
+		}
+				
+	}
+
+}

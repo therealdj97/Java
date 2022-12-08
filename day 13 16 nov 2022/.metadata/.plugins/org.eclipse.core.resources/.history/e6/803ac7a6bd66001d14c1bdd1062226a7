@@ -1,0 +1,22 @@
+package com.multithreadingDemo.main;
+
+import com.multithreadingDemo.threads.MyThread3;
+
+public class AppMain3 {
+
+	public static void main(String[] args) {
+		MyThread3 t1 = new MyThread3();
+		t1.start();
+		
+		try {
+			for(int i=20;i<=30;i+=1) {
+				System.out.println("hello from main "+i);
+			}
+			System.out.println("out of main thread now ");
+		}
+		catch() {
+	
+}
+	}
+
+}

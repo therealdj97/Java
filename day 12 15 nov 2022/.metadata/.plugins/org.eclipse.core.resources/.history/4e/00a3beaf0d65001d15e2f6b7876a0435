@@ -1,0 +1,44 @@
+package com.assignment10.Entity;
+
+public class MarkProcess {
+	public int regno ;
+	public int marks ;
+	
+	// getters & setters
+	public int getRegno() {
+		return regno;
+	}
+	public void setRegno(int regno) {
+		this.regno = regno;
+	}
+	public int getMarks() {
+		return marks;
+	}
+	public void setMarks(int marks) {
+		this.marks = marks;
+	}
+	
+	public MarkProcess() {
+	}
+	
+	public MarkProcess(int regno, int marks) {
+		this.regno=regno;
+		this.marks=marks;
+	}
+
+	public void validation() throws IllegalMarkException {
+			if (marks<0) {
+				System.out.println("Invalid mark");
+			}
+		}
+	
+	
+	public void result() {
+		if(marks>=40) {
+			System.out.println("PASS");
+		}
+		else 
+			System.out.println("Fail");
+	}
+
+}

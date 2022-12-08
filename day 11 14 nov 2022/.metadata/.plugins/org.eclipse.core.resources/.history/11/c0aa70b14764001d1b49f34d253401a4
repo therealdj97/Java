@@ -1,0 +1,42 @@
+package com.Assignment9.Entity;
+
+public class A {
+	protected int a ;
+	private int b ;
+	int c ;
+	public int d;
+	public A() {
+		this.a = 10;
+		this.b=20;
+		this.c=30;
+		this.d=40;
+	}
+//	public int getA() {
+//		return a;
+//	}
+//	public void setA(int a) {
+//		this.a = a;
+//	}
+//	public int getB() {
+//		return b;
+//	}
+//	public void setB(int b) {
+//		this.b = b;
+//	}
+//	public int getC() {
+//		return c;
+//	}
+//	public void setC(int c) {
+//		this.c = c;
+//	}
+//	public int getD() {
+//		return d;
+//	}
+//	public void setD(int d) {
+//		this.d = d;
+//	} 
+	
+	
+
+
+}

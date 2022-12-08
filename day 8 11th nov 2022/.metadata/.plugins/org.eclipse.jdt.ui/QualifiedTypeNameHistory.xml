@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="com.Assignmet7.Entity.Account"/>
+    <fullyQualifiedTypeName name="com.Assignmet7.Entity.PrevilegedAccount"/>
+    <fullyQualifiedTypeName name="com.Assignmet7.Entity.Cube"/>
+    <fullyQualifiedTypeName name="com.Assignmet7.Entity.Car"/>
+    <fullyQualifiedTypeName name="com.Assignmet7.Entity.Bus"/>
+    <fullyQualifiedTypeName name="com.Assignmet7.Entity.cats"/>
+    <fullyQualifiedTypeName name="com.Assignmet7.Entity.dogs"/>
+    <fullyQualifiedTypeName name="com.upcastingDemo.Entity.Shark"/>
+    <fullyQualifiedTypeName name="java.lang.StringIndexOutOfBoundsException"/>
+    <fullyQualifiedTypeName name="com.Assignmet7.Entity.Exam"/>
+</qualifiedTypeNameHistroy>

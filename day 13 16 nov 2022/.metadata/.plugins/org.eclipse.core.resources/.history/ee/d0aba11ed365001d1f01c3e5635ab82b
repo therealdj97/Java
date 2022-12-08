@@ -1,0 +1,19 @@
+package com.assignment11.main;
+
+public class Que5 {
+
+	public static void main(String[] args) {
+		int pnum=25;
+		int temp=1;
+		System.out.println("prime numbers are ");
+		for(int i=2;i<=pnum/2;i++) {
+			if (i%pnum==0) {
+				System.out.println("number is prime");
+				break;
+			}
+			else {
+				System.out.println("number is not prime");
+			}
+		}
+	}
+}

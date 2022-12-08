@@ -1,0 +1,60 @@
+Collection Framework In Java :- 
+	It is collection of pre-defined classes and interfaces using which programmer gets the flexibility of storing any type of elements and any number of elements in program.
+
+Collections are supposed to store objects.
+
+All classes and interfaces of collection framework belong to java.util package.
+
+List Collection :-
+
+1) any number of elements and any type of elements can be stored.
+2) It uses indexing to store elements.
+3) Insertion order of elements is maintained.
+4) Element can be added at and removed from any position.
+5) duplication of elements is allowed.
+
+If read operations are going to be performed more often than the write operations , then ArrayList should be used.
+
+If write operations are going to be performed more often than the read operations , then LinkedList should be used.
+
+Vector and Stack have become legacy classes , their better alternatives are present in the form of ArrayList and ArrayDeque class respectively.
+
+Vector and Stack are by default thread-safe whereas ArrayList and ArrayDeque are not thread-safe. 
+
+Set Collection :-
+
+1) any number of elements and any type of elements can be stored.
+2) It does not make use of indexing to store elements.
+3) Insertion order of elements is not maintained.
+4) duplication of elements is not allowed.
+
+TreeSet is going to sort all elements added into it in ascending order.
+
+Objects of only such classes can be stored in TreeSet which have implemented java.lang.Comparable interface.
+
+
+Queue Collection :-
+
+1) any number of elements and any type of elements can be stored.
+2) It does not make use of indexing to store elements.
+3) FIFO order is followed for adding and removing elements.
+4) Insertion order of elements is maintained.
+5) duplication of elements is allowed.
+
+
+Map collection :-
+
+1) Map stores entries where each entry is made up of <key,value> pair.
+2) It does not make use of indexing to store entries.
+3) Insertion order of entries is not maintained.
+4) Key can not be repeated , if key is repeated value gets replaced.
+
+	<page_number,topic_name>
+	
+	Using key we identify value in map.
+	value : object to be stored in map
+
+
+
+
+ 

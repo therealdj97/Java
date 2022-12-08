@@ -1,0 +1,4 @@
+package com.Assignmet7.Entity;
+
+public class Car extends Vehicle{
+}

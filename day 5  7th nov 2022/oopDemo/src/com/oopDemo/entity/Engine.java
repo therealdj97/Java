@@ -1,0 +1,18 @@
+package com.oopDemo.entity;
+
+public class Engine {
+	private int capacity;
+	private String fuel;
+	
+	public void manufactureEngine() {
+		capacity = 1000;
+		fuel = "petrol";
+	}
+	public void manufactureEngine(int cap,String f) {
+		capacity = 1000;
+		fuel = "petrol";
+	}
+	public void showEngineDetails() {
+		System.out.println("capacity :"+capacity+" fuel :"+fuel);
+		}
+}

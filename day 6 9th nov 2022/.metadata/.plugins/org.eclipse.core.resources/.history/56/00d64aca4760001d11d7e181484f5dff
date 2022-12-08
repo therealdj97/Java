@@ -1,0 +1,33 @@
+//5. Create a class called Circle which contains:
+//• Two private instance variables: radius (type double) and color (type String).
+//• Two overloaded constructors: a default constructor with no argument which
+//initializes the instance variables with the value of 1.0 and red respectively and
+//a constructor which takes a double argument for radius and String argument for color.
+//• Two public methods: getRadius() and getArea(), which return the radius and area of
+//the instance, respectively.
+//
+//Create two objects for the class using two constructors and invoke the methods.
+package com.assignment5.entity;
+
+public class circle {
+	private Double radius;
+	private String color;
+	
+	public circle() {
+		radius = 1.0;
+		color = "red";
+	}
+	
+	public circle(Double radius , String color) {
+		this.radius = radius;
+		this.color = color;
+	}
+	
+	public void getRadius() {
+		
+	}
+	public void getArea() {
+		int area = 3.14* radius* radius;
+	}
+	
+}

@@ -1,0 +1,20 @@
+//Create a Java program to overload an add function that can 
+//add integer, float or
+//double values and display the sum.
+package com.Assignment6.main;
+
+import com.Assignment6.Entity.add;
+
+public class q1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		add s1 = new add();
+		s1.sum(0, 0);
+		s1.sum(0, 0);
+		s1.sum(0, 0);
+		
+		
+	}
+
+}

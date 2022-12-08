@@ -1,0 +1,9 @@
+package com.Assignment9.Entity;
+
+public class Employee {
+	private int empid;
+	private String name;
+	private String designation;
+	private int salary;
+	
+}

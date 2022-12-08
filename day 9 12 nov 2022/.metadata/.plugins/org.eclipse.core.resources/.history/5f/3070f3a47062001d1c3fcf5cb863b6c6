@@ -1,0 +1,5 @@
+package com.Assignment8.interfaces;
+
+public class i3 implements i4{
+
+}

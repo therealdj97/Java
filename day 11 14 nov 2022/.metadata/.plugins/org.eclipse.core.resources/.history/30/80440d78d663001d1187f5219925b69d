@@ -1,0 +1,21 @@
+package com.objectdemo.main;
+
+import com.objectdemo.pojo.Student;
+
+public class AppMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Student s1 = new Student(14,"dhiraj");
+		Student s2 = new Student(14,"ABhi");
+		System.out.println("s1 details are "+s1);
+		// Here java.lang.object class tostring() method  is being called
+		// being provided by parent class to student class 
+		System.out.println(s1.toString());
+		if (s1.equals(s2))
+			System.out.println("s1 & s2 are same");
+		else 
+			System.out.println("s1 & s2 arent equal");
+		System.out.println(s1.hashcode());
+	}
+}

@@ -1,0 +1,32 @@
+package com.assignment10.main;
+import java.util.Scanner;
+public class q2 {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner (System.in);
+		System.out.println("Enter length of an array");
+		int n = sc.nextInt();
+		int arr[] = new int[n];
+		System.out.println();
+		
+		try {
+			for (int i=0;i<n;i++ ) {
+				System.out.println("Enter elements of an array");
+				arr[i] = sc.nextInt();
+			}
+			// to print 
+			for(int j=0;j<n;j++) {
+				System.out.println("elements in array are "+arr[j]);
+			}
+			
+			System.out.println("Enter index of element to be fetched");
+			int a = sc.nextInt();
+			int b = arr[a];
+			System.out.println("element is "+b);	
+		}
+		catch( ArrayIndexOutOfBoundsException exc) {
+			System.out.println("Kindly enter number less than "+n);
+		}
+	}
+}

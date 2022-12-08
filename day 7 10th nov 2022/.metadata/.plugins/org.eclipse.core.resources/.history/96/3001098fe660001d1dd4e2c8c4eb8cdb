@@ -1,0 +1,63 @@
+//4. Create a class named Employee having the following data members:
+//name
+//age
+//phoneno
+//address
+//salary
+//It also has a method named printSalary which prints the salary of the members.
+//Another class Manager inherits the Employee class. The Manager class have data
+//member department. Now, assign name, age, phone number, address, salary and
+//department to a manager by making an object of Manager class and print the salary.
+
+package com.Assignment6.Entity;
+public class employee {
+	private String name;
+	private int age;
+	private int phoneno;
+	private String address;
+	private int salary;
+	
+	public void printSalary() {
+		System.out.println("salarey of employee is"+getSalary());
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
+	}
+
+	public int getPhoneno() {
+		return phoneno;
+	}
+
+	public void setPhoneno(int phoneno) {
+		this.phoneno = phoneno;
+	}
+
+	public String getAddress() {
+		return address;
+	}
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
+
+	public int getSalary() {
+		return salary;
+	}
+
+	public void setSalary(int salary) {
+		this.salary = salary;
+	}
+}

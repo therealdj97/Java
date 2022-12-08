@@ -1,0 +1,6 @@
+package com.Assignmet7.Entity;
+
+public interface Result {
+	void checkStatus(int mark);
+
+}

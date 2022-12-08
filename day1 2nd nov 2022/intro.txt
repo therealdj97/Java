@@ -1,0 +1,5 @@
+class info{
+public static void main(Strings dhiraj[]){
+System.out.println("my name is dhiraj. my qualifications are ive done engineering in electrical engineering i have experiance of backend developer ");
+}
+}

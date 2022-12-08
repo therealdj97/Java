@@ -1,0 +1,7 @@
+package com.inheritDemo.entity;
+
+public class abc {
+	public void abc(String msg) {
+		System.out.println("abc executed"+msg);
+	}
+}

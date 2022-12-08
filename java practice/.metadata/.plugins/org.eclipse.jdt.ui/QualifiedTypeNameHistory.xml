@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="com.privateDataMembers.entity.DataMembers"/>
+    <fullyQualifiedTypeName name="com.privateDataMembers.entity.GettersSetters"/>
+    <fullyQualifiedTypeName name="java.lang.StringIndexOutOfBoundsException"/>
+    <fullyQualifiedTypeName name="com.privateDataMembers.entity.NonParamerizedConstructor"/>
+</qualifiedTypeNameHistroy>

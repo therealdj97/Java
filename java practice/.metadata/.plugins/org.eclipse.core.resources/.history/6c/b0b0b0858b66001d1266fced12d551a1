@@ -1,0 +1,11 @@
+package com.privateDataMembers.main;
+
+import com.privateDataMembers.entity.DataMembers;
+
+public class AppMain {
+	public static void main(String args[]) {
+		DataMembers d1 = new DataMembers();
+		d1.details();
+		System.out.println(d1);
+	}
+}

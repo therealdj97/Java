@@ -1,0 +1,16 @@
+package com.assignment5.java;
+
+import com.assignment5.entity.employee;
+
+public class question1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		employee e1 = new employee();
+		e1.employeeDetails();
+		e1.grossPay();
+		e1.display();
+		System.out.println(e1);
+	}
+
+}

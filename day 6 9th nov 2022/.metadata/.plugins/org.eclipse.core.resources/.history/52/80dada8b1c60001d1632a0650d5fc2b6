@@ -1,0 +1,8 @@
+//3. Create a class named Book with data members title, author and price. Write a parameterized
+//constructor for the class. Write a function for displaying the details. Create two objects for the class
+//using two constructors.
+package com.assignment5.entity;
+
+public class book {
+
+}

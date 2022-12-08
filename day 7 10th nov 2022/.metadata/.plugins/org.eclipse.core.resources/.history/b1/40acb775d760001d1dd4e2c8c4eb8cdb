@@ -1,0 +1,23 @@
+package com.Assignment6.Entity;
+
+public class add {
+	private a float;
+	private b float;
+	private c int;
+	private d int;
+	private e double;
+	private f double;
+	public sum() {
+		
+	}
+	public sum() {
+		
+	}
+	public sum() {
+		
+	}
+	public sum(){
+		
+	}	
+
+}

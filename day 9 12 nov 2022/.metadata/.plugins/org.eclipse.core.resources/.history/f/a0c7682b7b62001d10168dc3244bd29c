@@ -1,0 +1,27 @@
+package com.Assignments8.main;
+
+import com.Assignment8.implemet.Verify;
+
+public class AppMainQ5 {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Verify ref =  AppMainQ5 :: isPrime;
+		System.out.println(ref.check(20));
+	}
+	
+	public static boolean isPrime(int a) {
+		boolean flag ;
+		for(int i=0;i<a/2;i++) {
+			if(a%i==0) {
+				flag = true;
+				break;
+			}
+			else
+				flag = false;
+			
+		}
+		return false;
+		
+	}
+
+}

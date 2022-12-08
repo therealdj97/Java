@@ -1,0 +1,32 @@
+package com.assignment13.main;
+
+import com.assignment13.generics.gen1;
+
+
+
+public class q1 {
+	
+	private  <T> void display(T[] elements) {
+		for (T  element : elements) {
+			System.out.println("Elements are "+element);
+		}
+			
+			
+	}
+
+	public static void main(String[] args) {
+		gen1<String> g1 =new gen1<>("Dhiraj");
+		System.out.println("g1");
+		g1.showData();
+		
+		gen1<Integer> g2 = new gen1<>(14);
+		System.out.println("g2");
+		g2.showData();
+		
+//		gen1<double> g3 = new gen1<>();
+//		System.out.println("g3");
+		
+
+	}
+
+}

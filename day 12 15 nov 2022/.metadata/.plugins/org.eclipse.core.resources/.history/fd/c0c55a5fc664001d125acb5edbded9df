@@ -1,0 +1,11 @@
+package com.assignment10.main;
+
+public class q2 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner (System.in);
+		int arr[] = arr[n];
+		
+	}
+
+}

@@ -1,0 +1,32 @@
+package com.assignment13.main;
+
+import java.util.LinkedList;
+
+import java.util.Iterator;
+
+public class q2 {
+
+	public static void main(String[] args) {
+		LinkedList<Integer> l1 = new LinkedList<>();
+		
+		l1.add(123);
+		l1.add(456);
+		l1.add(789);
+		
+		l1.addFirst(110);
+		l1.addLast(900);
+		
+		System.out.println("All");
+		Iterator<Integer> it = l1.iterator();
+		while(it.hasNext()) {
+			System.out.println(it.next());
+		}
+		
+		l1.remove();
+		l1.removeFirst();
+		l1.removeLast();
+		
+		System.out.println("All elements from 1st are : ");
+		l1.forEach(System.out::println);
+	}
+}

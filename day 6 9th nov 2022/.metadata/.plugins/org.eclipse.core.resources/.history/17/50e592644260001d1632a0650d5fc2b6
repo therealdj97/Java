@@ -1,0 +1,22 @@
+//4. Create a class named Car with a default constructor which initializes the instance variable
+//model with the value “Ford”. Write a parametrized constructor also to initialize model.
+//Write a getModel() method to print the value of model. Create two objects for the class
+//using two constructors and invoke the getModel()method.
+
+package com.assignment5.java;
+
+import com.assignment5.entity.car;
+
+public class question4 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		car c1 = new car("");
+		c1.setModel("ferari");
+		System.out.println("car model is : "+c1.getModel());
+		car c2 = new car("");
+		c2.setModel("");
+		System.out.println("car model is"+c2.getModel());
+	}
+
+}

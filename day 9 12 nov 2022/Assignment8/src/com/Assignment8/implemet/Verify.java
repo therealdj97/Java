@@ -1,0 +1,6 @@
+package com.Assignment8.implemet;
+
+@FunctionalInterface
+public interface Verify {
+	boolean check(int a);
+}

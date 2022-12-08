@@ -1,0 +1,16 @@
+package com.Assignment7.main;
+
+public class AppMain4 {
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	public void eat(){
+		
+	}
+	
+	public void makeNoise(){
+		
+	}
+}

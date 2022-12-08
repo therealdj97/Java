@@ -1,0 +1,23 @@
+package com.assignment11.entity;
+
+import java.util.Scanner;
+
+public class Q4 implements Runnable{
+@Override
+public void run() {
+	Scanner sc = new Scanner(System.in);
+	System.out.println("Enter a number: ");
+	int y = sc.nextInt();
+	int temp=1;
+	try {
+		for(int i =1;i<=y;i++) {
+			temp=temp*i;
+			Thread.sleep(3000);
+			System.out.println("Factorial of number is "+temp);
+		}
+	}
+	catch(InterruptedException e) {
+		e.printStackTrace();
+	}
+}
+}

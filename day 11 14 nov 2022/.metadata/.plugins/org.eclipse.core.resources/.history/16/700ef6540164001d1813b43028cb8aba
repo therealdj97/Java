@@ -1,0 +1,14 @@
+package com.Assignment9.Entity;
+
+public class BankAccount {
+	private int accno;
+	private String name;
+	private int acctbal ;
+	
+	public static void BankAccount(int accno,String name,int acctbal) {
+		this.accno=accno;
+		this.name=name;
+		this.acctbal=acctbal; 
+	}
+
+}

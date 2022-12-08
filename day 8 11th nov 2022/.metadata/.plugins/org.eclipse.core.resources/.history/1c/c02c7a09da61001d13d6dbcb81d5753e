@@ -1,0 +1,13 @@
+package com.upcastingDemo.main;
+
+import com.upcastingDemo.Entity.Animals;
+
+public class AppMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Animals ref = new Animals();
+		ref.relocate();
+	}
+
+}

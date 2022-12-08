@@ -1,0 +1,25 @@
+//4. Write a program to swap 2 numbers which is read using BufferedReader class.
+
+
+java.io.BufferedReader;
+import java.io.InputStremeReader;
+import java.io.IOException;
+
+public class Swap{
+
+	public static void main(String [] args) throws IOException{
+	
+		BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+
+		System.out.print("Enter the 1st number to be swapped");
+		Int fnum = Integer.parseInt(br.readLine);
+		System.out.print("Enter the 2nd number to be swapped");
+		Int snum = Integer.parseInt(br.readLine);
+		int swap == int fnum;
+		int fnum == int snum;
+		System.out.println("1st number is"+fnum);
+		System.out.println("2nd number is"+snum);
+
+	}
+
+}

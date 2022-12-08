@@ -1,0 +1,27 @@
+package com.Assignmet7.Entity;
+
+public class PrevilegedAccount extends Account   {
+
+	public PrevilegedAccount(int accNo, String Name, String accType, Double accBalance) {
+		super(accNo, Name, accType, accBalance);
+		// TODO Auto-generated constructor stub
+	}
+	
+	private int amt;
+	
+	@Override
+	public void deposit(int amt) {
+	
+	}
+	
+	@Override
+	public void withdraw(int amt) {
+		if(amt>accBalance+5000) {
+			accBalace=accBalance-amt;
+			System.out.println("Ammount can be withdrawn");
+		}
+		else {
+			System.out.println("Amount can't be withdrawn");
+		}
+	}
+}

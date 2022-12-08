@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.privateDataMembers.entity.DataMembers&apos; to &apos;PublicMethod&apos;&#x0D;&#x0A;- Original project: &apos;privateDataMembers&apos;&#x0D;&#x0A;- Original element: &apos;com.privateDataMembers.entity.DataMembers&apos;&#x0D;&#x0A;- Renamed element: &apos;com.privateDataMembers.entity.PublicMethod&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;DataMembers&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.privateDataMembers.entity{DataMembers.java[DataMembers" matchStrategy="1" name="PublicMethod" qualified="false" references="true" similarDeclarations="false" stamp="1668698854932" textual="false" version="1.0"/>
+</session>

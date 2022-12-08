@@ -1,0 +1,7 @@
+package com.inheritDemo.entity;
+
+public class abc {
+	public void abc() {
+		System.out.println("abc says");
+	}
+}

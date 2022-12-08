@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="com.oopDemo.entity.Engine"/>
+    <fullyQualifiedTypeName name="javax.sql.rowset.serial.SQLOutputImpl"/>
+    <fullyQualifiedTypeName name="com.assignment.entity.student"/>
+    <fullyQualifiedTypeName name="com.assignment.entity.Rectangle"/>
+    <fullyQualifiedTypeName name="com.oopDemo.entity.product"/>
+    <fullyQualifiedTypeName name="com.oopDemo.entity.shoe"/>
+    <fullyQualifiedTypeName name="com.oopDemo.entity.abc"/>
+</qualifiedTypeNameHistroy>

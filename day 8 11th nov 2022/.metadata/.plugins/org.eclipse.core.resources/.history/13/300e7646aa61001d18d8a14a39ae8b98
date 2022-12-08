@@ -1,0 +1,15 @@
+package com.Assignment7.main;
+
+import com.Assignmet7.Entity.Account;
+
+public class AppMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Account a1 = new Account(10, "dhiraj", "SavingsAccount", 10000.00);
+		a1.deposit(10000);
+		a1.withdraw(500);
+		
+	}
+
+}

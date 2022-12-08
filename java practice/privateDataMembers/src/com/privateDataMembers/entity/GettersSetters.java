@@ -1,0 +1,23 @@
+package com.privateDataMembers.entity;
+
+public class GettersSetters {
+	private String name ;
+	private int RollNo ;
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public int getRollNo() {
+		return RollNo;
+	}
+	public void setRollNo(int rollNo) {
+		RollNo = rollNo;
+	}
+	
+	public void getDetails() {
+		System.out.println("name is "+name+" roll no is "+RollNo);
+	}
+
+}

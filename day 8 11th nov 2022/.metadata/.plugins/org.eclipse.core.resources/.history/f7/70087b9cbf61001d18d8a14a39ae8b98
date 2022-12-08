@@ -1,0 +1,7 @@
+package com.Assignmet7.Entity;
+
+abstract class Vehicle {
+	abstract void color(){
+		
+	}
+}

@@ -1,0 +1,7 @@
+package com.functionalDemo.main;
+
+public class AppMain {
+	public static void main(String args[]) {
+		
+	}
+}

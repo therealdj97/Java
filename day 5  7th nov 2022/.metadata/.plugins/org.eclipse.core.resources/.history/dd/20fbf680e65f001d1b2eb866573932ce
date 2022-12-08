@@ -1,0 +1,9 @@
+package com.oopDemo.entity;
+
+public class product {
+	private int productId;
+	private String productName; 
+	public void showProductDetails() {
+		System.out.println("id"+productId+"name"+productName);
+	}
+}

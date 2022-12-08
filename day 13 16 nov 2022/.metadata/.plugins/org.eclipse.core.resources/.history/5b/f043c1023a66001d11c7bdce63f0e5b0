@@ -1,0 +1,21 @@
+package com.assignment11.main;
+import com.Assignment11.entity.fibo;
+import com.Assignment11.entity.prime;
+
+public class Que5 {
+
+	public static void main(String[] args) throws InterruptedException {
+		Thread ct=Thread.currentThread();
+		System.out.println("Main thread name : "+ct.getName());	
+		prime p=new prime();
+		fibo f=new fibo();
+		Thread fib=new Thread(f,"fibonacci");
+		Thread prime=new Thread(p,"prime");
+		fib.start();
+		fib.sleep(1000);
+		System.out.println("Thread "+ prime.getName() + " started.");
+		prime.start();
+		System.out.println("Thread "+ fib.getName() + " started.");
+
+	}
+}

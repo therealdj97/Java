@@ -1,0 +1,21 @@
+package com.assignment13.main;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Scanner;
+
+public class q1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc= new Scanner (System.in);
+		System.out.println("enter any string sentence");
+		String s1 = sc.nextLine();
+		
+		String[]arr=s1.split(" ");
+		
+		Map<String.Integer>obj = new HashMap<>();
+		
+	}
+
+}

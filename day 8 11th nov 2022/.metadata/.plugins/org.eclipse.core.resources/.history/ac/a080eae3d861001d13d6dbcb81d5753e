@@ -1,0 +1,9 @@
+package com.upcastingDemo.Entity;
+
+public class Shark extends Animals{
+@override
+	public void relocate() {
+	
+}
+
+}

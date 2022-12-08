@@ -1,0 +1,14 @@
+package com.Assignment9.Entity;
+
+public class Motherboard {
+	public static class usb{
+		static int usb2=2;
+		static int usb3=1;
+		public static void getTotalPorts() {
+			this.usb2=usb2;
+			this.usb3=usb3;
+			return usb2+usb3;
+		}
+	}
+
+}

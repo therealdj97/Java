@@ -1,0 +1,11 @@
+package com.Assignment8.interfaces;
+
+import com.Assignment8.implemet.i3;
+
+public class i4 implements i3{
+@Override
+	public void meth1() {
+	System.out.println("Hello from i4");
+}
+
+}

@@ -1,0 +1,31 @@
+package com.Assignment15.main;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.Assignment15.pojo.product;
+
+public class q3 {
+
+	public static void main(String[] args) {
+		 System.out.println("Books whose price is greater than Rs.100");
+
+		List<product> plist = new ArrayList<product>();
+
+		plist.add(new product(1, "Wings of fire", "autobiography", 500));
+		plist.add(new product(2, "Malgudi", "fiction", 2500));
+		plist.add(new product(3, "Ramayana", "Devotional", 500));
+		plist.add(new product(4, "Mahabharat", "Devotional", 3800));
+		plist.add(new product(5, "The Great Indian Noval", "History", 1550));;
+
+		plist.add(new product(6, "Half girlfriend ", "Romance", 1500));
+		plist.stream().filter(p -> p.getPrice()>100) //filtering price
+		.map(pm -> pm.getPrice()) //fetching price.
+		.forEach(System.out:: println);
+
+		System.out.println("Total number of element are :-"+plist.stream().count());
+
+
+	}
+
+}

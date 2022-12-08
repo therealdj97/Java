@@ -1,0 +1,13 @@
+package com.Assignmet7.Entity;
+
+public class Animals {
+
+
+	public void eat(){
+		
+		}
+	
+	public void makeNoise(){
+		
+		}
+}

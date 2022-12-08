@@ -1,0 +1,20 @@
+package com.Assignment8.interfaces;
+
+import com.Assignment8.implemet.Verify;
+
+public class q5 implements Verify{
+
+	@Override
+	public boolean check(int a) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+	public static void isPrime() {
+		
+	}
+	public void isOdd() {
+		
+	}
+	
+
+}

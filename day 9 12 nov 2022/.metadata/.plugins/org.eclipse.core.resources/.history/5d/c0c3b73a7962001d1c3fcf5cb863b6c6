@@ -1,0 +1,16 @@
+package com.Assignments8.main;
+
+import com.Assignment8.implemet.Verify;
+import com.Assignment8.interfaces.q5;
+
+public class AppMainQ5 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Verify ref = q5 :: isPrime;
+		Verify ref2 = q5 :: isOdd;
+		
+
+	}
+
+}

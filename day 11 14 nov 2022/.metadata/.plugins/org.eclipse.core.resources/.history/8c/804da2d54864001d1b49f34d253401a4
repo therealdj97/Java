@@ -1,0 +1,16 @@
+package com.Assignment9.main;
+
+import org.jcp.xml.dsig.internal.SignerOutputStream;
+
+import com.Assignment9.Entity.A;
+
+public class AppMain7 {
+	
+	public class B extends A {
+		
+		public static void main(String[] args) {
+			// TODO Auto-generated method stub
+			System.out.println();
+		}
+	}
+}

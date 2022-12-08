@@ -1,0 +1,28 @@
+package com.assignment10.Entity;
+
+import java.util.Scanner;
+
+public class MarkProcess {
+	public int regno ;
+	public int marks ;
+	
+	MarkProcess() {
+		Scanner sc = new Scanner (System.in);
+		System.out.println("enter marks");
+		this.marks=sc.nextInt();
+	}
+	public void validation() throws IllegalMarkException {
+			System.out.println();
+			if (marks<0) {
+				System.out.println("Invalid mark");
+			}
+		}
+	public void result() {
+		if(marks>=40) {
+			System.out.println("PASS");
+		}
+		else 
+			System.out.println("Pass");
+	}
+
+}

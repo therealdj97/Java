@@ -1,0 +1,14 @@
+package com.Assignment7.main;
+
+import com.Assignmet7.Entity.Exam;
+
+public class AppMain5 {
+	public static void main(String args[]) {
+		Exam c1 = new Exam();
+		c1.checkStatus(60);
+		//c1.chkGrade(55);
+		System.out.println(c1.chkGrade(55));
+	}
+	
+	
+}
