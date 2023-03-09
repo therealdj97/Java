@@ -1,0 +1,421 @@
+java
+
+Java programming was developed by James Gosling at Sun Microsystems in 1995. James Gosling is well known as the father of Java
+
+multithreading
+The output of program is Thread[main,5,main], in this priority assigned to the thread is 5. It’s the default value. Since we have not named the thread they are named by the group to they belong i:e main method.
+
+: Thread is a lightweight and requires less resources to create and exist in the process. Thread shares the process resources.
+
+Daemon thread runs in the background and does not prevent JVM from terminating. Child of daemon thread is also daemon thread
+
+Thread scheduler decides the priority of the thread execution. This cannot guarantee that higher priority thread will be executed first, it depends on thread scheduler implementation that is OS dependent.
+
+. Deadlock is a situation when thread is waiting for other thread to release acquired object
+
+Deadlock is java programming situation where one thread waits for an object lock that is acquired by other thread and vice-versa.
+
+To avoid deadlock situation in Java programming do not execute foreign code while holding a lock.
+
+Thread(Runnable a, String str) is a valid constructor for thread. Thread() is also a valid constructor.
+
+notify() wakes up a single thread which is waiting for this object.
+
+Calling the SetPriority() method on a Thread object only changes the priority of the thread, but it does not stop the execution of the thread.
+
+b) Calling the notify() method on an object is used to wake up a single thread that is waiting on the object, but it does not stop the execution of the thread.
+
+c) Calling the wait() method on an object is used to cause the current thread to wait until it is notified, but it does not stop the execution of the thread.
+
+d) Calling the read() method on an InputStream object is used to read data from the input stream, but it does not stop the execution of the thread.
+
+ Which of the following will ensure the thread will be in running state?
+a) yield()
+
+ wait() always causes the current thread to go into the object’s wait pool. Hence, using this in a thread will keep it in running state.
+ 
+ Which of these keywords are used to implement synchronization -> synchronized
+ 
+ Polling is a usually implemented by looping in CPU is wastes CPU time, one thread being executed depends on other thread output and the other thread depends on the response on the data given to the first thread. In such situation CPU time is wasted, in Java this is avoided by using methods wait(), notify() and notifyAll().
+ 
+ wait() method is used to tell the calling thread to give up a monitor and go to sleep until some other thread enters the same monitor. This helps in avoiding polling and minimizes CPU idle time.
+
+ Which of these method wakes up the first thread that called wait()?
+b) notify()
+
+
+notifyAll() wakes up all the threads that called wait() on the same object. The highest priority thread will run first.
+
+When two or more threads need to access the same shared resource, they need some way to ensure that the resource will be used by only one thread at a time, the process by which this is achieved is called synchronization
+
+
+
+AWT stands for Abstract Window Toolkit, it is used by applets to interact with the user
+
+
+. Which of these is used to perform all input & output operations in Java?
+a) streams
+
+
+Like in any other language, streams are used for input and output operations
+
+Java defines only two types of streams – Byte stream and character stream.
+
+Byte stream uses InputStream and OutputStream classes for input and output operation
+
+Character streams uses Writer and Reader classes for input & output operations.
+
+Which of these class is used to read from byte array?
+d) ByteArrayInputStream
+
+
+ read method throws IOException.
+ 
+ 2. Which of these is used to read a string from the input stream?
+d) read
+
+. Which of these class is used to read characters and strings in Java from console?
+a) BufferedReader
+
+FileInputStream implements InputStream.
+
+
+
+: print() and println() are defined under the class PrintStream, System.out is the byte stream used by these methods .
+
+Character streams uses Writer and Reader classes for input & output operations
+
+ Which of these class is used to read from a file?
+
+c) FileInputStream
+
+. Which of these class contains the methods used to write in a file?
+b) FileInputStream
+
+ Each time read() is called, it reads a single byte from the file and returns the byte as an integer value. read() returns -1 when the end of the file is encountered.
+ 
+ Both close() and read() method throw IOException.
+  obj.available() returns the number of bytes.
+  
+  
+  
+  a protected instance method in the superclass can be made public, but not private, in the subclass.
+  
+  
+Access Modifier		within class		within package		outside package by subclass only				outside package
+Private			Y				N				N									N
+Default			Y				Y				N									N
+Protected			Y				Y				Y									N
+Public			Y				Y				Y									Y
+
+
+a veraible declared as transiaent wont be seriealized
+
+
+
+
+The order of execution is:
+
+The static block will execute whenever the class is loaded by JVM.
+Instance block will execute whenever an object is created, and they are invoked before the constructors. For example, if there are two objects, the instance block will execute two times for each object.
+The constructor will execute after the instance block, and it also execute every time the object is created.
+A method is always executed at the end.
+
+The execution order of the program is that the static block executes first, then instance block, and then constructor.
+
+ For every long literal to be recognized by Java, we need to add L character at the end of the expression. It can be either uppercase (L) or lowercase (l) character. However, it is recommended to use uppercase character instead of lowercase because the lowercase (l) character is hard to distinguish from the uppercase (i) character.
+ 
+  The Javadoc is a tool that is used to generate API documentation in HTML format from the Java source files. In other words, it is a program (tool) that reads a collection of source files into an internal form.
+
+The Javadoc command line syntax is,
+Javadoc [options] [packagenames] [sourcefiles] [@files]
+
+The javap tool is used to get the information of any class or interface. It is also known as a disassembler. The javaw command is identical to java that displays a window with error information, and the javah command is used to generate native method functions.
+
+Hence, the correct answer is option (c).
+
+
+: The getName() method of the Class class returns the name (as String) of the entity (class, interface) represented by this Class object. It is a non-static method, and available in the java.lang package.
+
+
+The getClass() method of the Object class returns the runtime class of this object. The intern() and toString() methods are of String class
+
+here are following reasons for considering a variable shadowing, they are listed below:
+
+When we define a variable in a local scope with a variable name same as the name of a variable defined in an instance scope.
+When a subclass declares a variable with the same name as of the parent class variable.
+When a method is overridden in the child class.
+
+ Anonymous inner classes are the same as the local classes except that they don't have any name. The main use of it is to override methods of classes or interfaces. And the rest three options are false about the anonymous inner classes as it can have both methods and objects. It does not have any fixed came name.
+ 
+ 
+ The Random class is available in the java.util package. An object of the Random class is used to generate a series of pseudorandom numbers. And the object of this class is a thread-safe and cryptographically insecure object. The Random class provides a variety of methods that are used to create random numbers of type integers, float, long, double, etc.
+ 
+ The nameless objects are basically referred to as anonymous objects. The anonymous objects do not have any names. We can also say that, when an object is initialized but is not assigned to any reference variable, it is called an anonymous object. For example, new Employee();.
+
+If we assign it to a reference variable like,
+
+Employee emp = new Employee();
+
+In the above code, emp is a reference variable. Therefore, the above object is not anonymous, as it is assigned to a reference variable.
+
+An interface with no methods and fields is known as the marker interface. In other words, an empty interface (containing no fields and methods) is called a marker interface. In Java, the most commonly used marker interfaces are Serializable, Cloneable, Remote, and ThreadSafe interfaces. Marker interfaces are also known as the Tag interface. It is used to tell the JVM or compiler that the particular class has special behavior.
+
+Following is the code snippet of a maker interface:
+
+public interface Cloneable 
+{
+    // empty 
+}
+
+ According to the class hierarchy of Java Swing, the Applet class is the direct subclass of the Panel class. You can go through the link, (https://www.javatpoint.com/java-swing) to deeply understand the class hierarchy diagram. The Panel class and Window class are the child classes of the Container class, and Frame and Dialog classes are the subclasses of the Window class.
+ 
+ 
+ A final class cannot extend other classes.
+ 
+ 
+ Using the final keyword with a variable makes it constant or immutable. We can't reassign the values of it.
+A final variable must be a local variable and cannot be used in other classes.
+Using the final keyword with a method makes it constant, and we can't override it in the subclass.
+Using final with a class makes the class constant, and we cannot extend a final class. But a final class can extend other classes.
+
+
+According to the class hierarchy of Throwable class, the Error and Exception classes are the direct subclasses of the Throwable class, as shown below.
+
+
+The RuntimeException, IOException, and VirtualMachineError classes are the subclasses of the Exception and Error classes.
+
+
+An exception caused by other exceptions
+
+In Java, an exception caused by other exceptions is known as a chained exception. Generally, the first exception causes the second exception. It helps in identifying the cause of the exception. In chained exceptions, the debugging information is not discarded.
+
+
+When a String is created using a new operator, it always created in the heap memory. Whereas when we create a string using double quotes, it will check for the same value as of the string in the string constant pool. If it is found, returns a reference of it else create a new string in the string constant pool.
+
+
+
+The intern() method is used to return the existing strings from the database. In other words, the intern() method returns a reference of the string. For example, if the string constant pool already has a string object with the same value, the intern() method will return a reference of the string from the pool.
+
+
+ A marker interface is an interface with no fields and methods. In other words, an empty interface (contains nothing) is known as the marker interface. Examples of marker interfaces are Cloneable, Serializable, ThreadSafe, and Remote interface.
+
+The Runnable, Readable, and Result interface are not marker interface as they contain some methods or fields
+
+strictfp is the only reserved keyword of Java. The strictfp keyword is a modifier that restricts the floating-point calculations to assure portability and it was added in Java version 1.2. The objects are referring to those variables that are created using the new operator. In Java, main is the method that is the entry point of any program, and the System is a class.
+
+
+The import keyword is used to access the classes and interfaces of a particular package to the current file. In other words, it is used to import the user-defined and built-in classes and interfaces into the source file of java so that the current file can easily access the other packages by directly using its name. 
+
+
+ Java ARchive (JAR) is a package file format used to combine all the metadata and resources into a single file. In other words, it is a file that contains several components, which make up a self-contained, executable, and deployable jar used to execute Java applications and deploy Java applets.
+ 
+ 
+  The rt.jar stands for the runtime jar that comprises of all the compiled core class files for the Java Runtime Environment. It generally consists of classes like java.lang.String, java.lang.Object, java.io.Exception, etc., and all packages and classes available in the rt.jar are known to the JVM. The rt.jar is the mandatory jar file for every core java application as it contains all the core classes.
+  
+  
+   In java, the "\w" regex is used to match with a word character consists of [a-zA-Z_0-9]. For example, \w+ matches one or more word character that is same as ([a-zA-Z_0-9] +).
+
+The regex \W, \s, and \S are used for a non-word character, a whitespace character, and a non-whitespace character, respectively. Hence, the \w regex is used for a word character.
+
+
+The notify(), notifyAll(), and wait() are the methods of the Object class. The notify() method is used to raise a single thread that is waiting on the object's monitor. The notifyAll() method is similar to the notify() method, except that it wakes up all the threads that are waiting on the object's monitor. The wait() method is used to make a thread to wait until another thread invokes the notify() or notifyAll() methods for an object.
+
+
+The initial or default quantity of an ArrayList is 10. It means when we create an ArrayList without specifying any quantity, it will be created with the default capacity, i.e., 10. Hence, an ArrayList with the default capacity can hold ten (10) values.
+
+A mutable class is a class in which changes can be made after its creation. We can modify the internal state and fields of a mutable class. The StringBuilder class is a mutable class, as it can be altered after it is created.
+
+CallableStatement cab = con.prepareCall("{call getPassword()}");
+
+If two or more threads are trying to access a common resource at the same time. This situation is known as race condition. It generally occurs during the execution of multi-threaded application. It also refers to a programming bug or issue that occurs when the thread scheduler swaps the threads at any time between the process.
+
+The sleep() method does not release any locks of an object for a specific time or until an interrupt occurs. It leads to the poor performance or deadlock of threads. Whereas, the wait() method does not release the locks of an object.
+
+: In Java, we can modify the values of a variable with the help of a reserved keyword known as volatile. It is a different way of making a class thread-safe. Thread-safe means that the methods and objects of a class are accessible by multiple threads at the same time.
+
+The volatile keyword is not a replacement of a synchronized block or method as it does not remove the need for synchronization among the atomic actions.
+
+Global is not a reserved keyword in Java. The transient and default are keywords in Java, but they are not used for accessing a variable by a thread from any part of the program.
+
+There are two types of I/O stream. One is a byte stream, and the other is the character stream. The Byte stream is used to perform input or output 8-bit (equals to 1 byte) Unicode bytes whereas, the Character stream is used to read or write a 16-bit (equals to 2 bytes) Unicode character.
+
+Therefore, a single operation of character stream performs two bytes read/ write at a time.
+
+The OutputStreamWriter class translates Unicode character into bytes by using the character encoding. The character encoding can be either a default encoding dependent on the system or encoding that is explicitly defined. If no external encoding is specified, it will use the default encoding of the host platform.
+
+The mutable objects are objects whose value can be changed after initialization. We can change the object's values, such as field and states, after the object is created. For example, Java.util.Date, StringBuilder, StringBuffer, etc.
+
+
+The immutable objects are objects whose value can not be changed after initialization. We can not change anything once the object is created. For example, primitive objects such as int, long, float, double, all legacy classes, Wrapper class, String class, etc.
+
+Tight coupling : In general, Tight coupling means the two classes often change together. In other words, if A knows more than it should about the way in which B was implemented, then A and B are tightly coupled.
+
+ Loose coupling : In simple words, loose coupling means they are mostly independent. If the only knowledge that class A has about class B, is what class B has exposed through its interface, then class A and class B are said to be loosely coupled. In order to over come from the problems of tight coupling between objects, spring framework uses dependency injection mechanism with the help of POJO/POJI model and through dependency injection its possible to achieve loose coupling.
+ 
+ 	Variables declared in interfaces are implicitly public, static, and final.
+	
+	A listener is a object that is notified when an event occurs.
+
+
+object  is superclass of all other classes?
+
+How can we identify whether a compilation unit is class or interface from a .class file?
+A.	Java source file header
+
+What is the preferred way to handle an object's events in Java 2?
+B.	Add one or more event listeners to handle the events
+
+i) public can only be assigned to class => true  
+(ii) protected protects a statement => true
+(iii) protected method is never accessible outside the package => flase
+ (iv) friendly variable may be accessible outside class => true
+
+	An application can in general be trusted whereas an applet can't.
+B.	An applet must be executed in a browser environment.
+C.	An applet is not able to access the files of the computer it runs on
+
+in inheritance a new class is derived from an existing class
+
+he exception class that you define extends either the class Throwable or one of its subclasses.
+
+ checked exception
+Throw the exception to the method that called this method, or handle the exception in a catch block.
+
+. The class Throwable, which is derived from the class Object, is the superclass of the class Exception.
+
+
+A message string is returned by which method of an Exception object?
+
+getException()
+\
+512 bytes default buffer size used by any buffered class
+
+Which class cannot be a subclass in java  Final class
+
+
+Copy of argument is made into the formal parameter of the subroutine.	
+Which of the following statements are incorrect?
+A.	Default constructor is called at the time of declaration of the object if a constructor has not been defined.
+B.	Constructor can be parameterized.
+
+	Applets do not require a main() method at all.
+C.	There can be only one main() method in a program.
+D.	main() method must be made public.
+
+	
+If a thread is to be declared as a daemon thread, it must be declared before start method 
+
+.	
+The . FileOutputStream class is used to write bytes to a file:
+
+The  . FileReader class is used to read characters from the file:
+
+ An event is an object that describes a state change in a source.
+
+object is the super class of all classes of the java.lang package?
+
+ Throwable is the super class of all exception classes
+ 
+ .	
+Which of these class is used to make a thread?
+
+D.	thread
+
+
+	
+Which of these interface is implemented to create a Thread?
+A.	Runnable
+
+	getPriority() 	method of Thread class is used to find out the priority given to a thread?
+	
+	
+	
+	join() method waits for the thread to treminate?
+	
+	Which of these classes is used to read characters and strings in Java from console?
+
+D.	InputStreamReader
+
+
+	
+Which of these classes are used by Byte streams for input operation?
+A.	InputStream
+
+
+A primitive data type can be passed as an argument into a method
+A.	By value
+
+
+.	
+Which of these access specifiers can be used for an interface?
+A.	Public,
+
+
+.	
+Which of these classes is related to all the exceptions that can be caught by using catch?
+
+Answer» B. Exception
+
+Which of these classes is related to all the exceptions that cannot be caught?
+
+Answer» A. Error
+
+Variables declared with in a class are called	=>	instance variable
+
+	
+Variables declared within a method or block are called =>	local variable
+
+constructors is used to initialize objects.
+
+
+final class class cannot have a subclass in java
+
+
+	
+The use of final keyword with method definition
+C.	Prevents method overriding
+
+
+Identify the type of inheritance when two or more subclasses inherit the properties of a super class.
+	Hierarchical inheritance
+	
+	
+	.	
+If a class inheriting an abstract class does not define all of its function then it will be known as?
+A.	abstract
+
+
+A.	Every class containing abstract method must be declared abstract.
+B.	Abstract class defines only the structure of the class not its implementation.
+D.	Abstract class can be inherited.
+
+	
+JVM is an interpreter for bytecode.
+
+What is the size of int data type in java?
+Answer» C. 4 bytes
+
+What is the numerical range of a char in Java?  => 0 to 65535
+
+
+	
+Which one of the following is a valid identifier in java?
+A.	x1
+
+>> signed >>> unsigned
+
+Which one of the following is a jump statement in java? => break
+
+	
+Which of the following loops will execute the body of loop even when condition controlling the loop is initially false?
+A.	do-while
+
+18.	
+Which of these is an incorrect array declaration?
+A.	int arr[] = new int[5];
+B.	int [] arr = new int[5];
+C.	int arr[]; arr = new int[5];
+D.	int arr[] = int [5] new
+Answer» D. int arr[] = int [5] new
+

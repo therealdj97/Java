@@ -66,9 +66,8 @@ public class AppMain {
 			}
 			else
 				System.out.println("product was not deleted or no"+ " such product found");
-			
-			
-			break;
+				break;
+
 		case "UPDATE":
 			// update details 
 			System.out.println("Enter orderId of order to be updated :");

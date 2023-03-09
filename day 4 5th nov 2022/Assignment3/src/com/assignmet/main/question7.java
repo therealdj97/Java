@@ -9,8 +9,8 @@ public class question7 {
 		System.out.println("Enter the name of Day in a Week");
 		Scanner sc = new Scanner(System.in); 
 		int w = sc.nextInt();
-		switch(w) {
 		
+		switch(w) {
 		case 0:System.out.println("Sunday");
 		break;
 		case 1:System.out.println("Monday");
@@ -27,7 +27,7 @@ public class question7 {
 		break;
 		default:System.out.println("Please enter a valid input which should be between 0 to 6");
 		}
+		
 	}
-	
-	
+
 }
